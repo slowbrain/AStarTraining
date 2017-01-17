@@ -1,0 +1,8 @@
+
+chmod +x /Applications/JuliaPro-0.5.0.2.app/Contents/Resources/pkgs-0.5.0.2/v0.5/Homebrew/deps/usr/bin/brew
+ 
+cd /Applications/JuliaPro-0.5.0.2.app/Contents/Resources/pkgs-0.5.0.2/v0.5/Homebrew/deps/usr
+ 
+git fetch && git reset --hard origin/master
+ 
+Pkg.build(“Homebrew”)
